@@ -2,3 +2,9 @@ Linked List Topics:-
 1. Singly Linked List 
 2. Doubly Linked List  
 3. Circular Linked List 
+
+Advantages of Linked List over Arrays:
+1. No holes in the data strcture
+2. Insertion at the start takes O(1) instead of O(N) as in array
+
+
