@@ -25,3 +25,4 @@ Doubly Linked List:-
 3. Needs more memory as it stores 2 pointers
 
 Circular Linked List:-
+1. No Null reference is present
