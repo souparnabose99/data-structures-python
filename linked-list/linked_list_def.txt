@@ -20,3 +20,5 @@ Linked List Applications:-
 4. Block chain network
 
 Doubly Linked List:-
+1. Can traverse both forward and backward
+2. 
