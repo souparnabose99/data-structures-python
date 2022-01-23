@@ -18,3 +18,5 @@ Linked List Applications:-
 2. Windows photo viewer
 3. Browser pages, all these above are doubly linked list
 4. Block chain network
+
+Doubly Linked List:-
