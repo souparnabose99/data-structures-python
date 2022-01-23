@@ -21,4 +21,4 @@ Linked List Applications:-
 
 Doubly Linked List:-
 1. Can traverse both forward and backward
-2. 
+2. Insertion & deletion at start and end both take O(1)
