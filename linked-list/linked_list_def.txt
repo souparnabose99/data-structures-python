@@ -12,3 +12,9 @@ Search -> Array: O(1), Linked List: O(N)
 Insert at start -> Array: O(N), Linked List: O(1)
 Insert at end -> Array: O(1), Linked List: O(N)
 Extra space -> Array: 0, Linked List: O(N)
+
+Linked List Applications:- 
+1. alt+tab command in Windows
+2. Windows photo viewer
+3. Browser pages, all these above are doubly linked list
+4. Block chain network
