@@ -1,1 +1,21 @@
+2 types of memory, Stack and Heap.
+
+Stack Memory:
+1. Small size
+2. Fast access
+3. Stores function calls and local variables
+4. No fragmentation
+
+Heap Memory:
+1. Large size
+2. Slow access
+3. Stores objects
+4. May become fragmented
+
+Modern prgramming languages use stack for day to day implementation. eg - Recursion
+
+Applications of Stack:
+1. Back button in browsers
+2. Undo operaton in software
+3. Stack memory stores local variables and function calls
 
