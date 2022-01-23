@@ -1,1 +1,6 @@
+Queue:
 
+1. Useful when resource is shared with several consumers
+2. Threads are stored in queues
+3. CPU shielding, asynchronous data transfer between processes
+4. Graphs rely heavily on queues. eg: BFS
