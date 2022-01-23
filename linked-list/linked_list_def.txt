@@ -7,4 +7,8 @@ Advantages of Linked List over Arrays:
 1. No holes in the data strcture
 2. Insertion at the start takes O(1) instead of O(N) as in array
 
-
+Runtime complexity:
+Search -> Array: O(1), Linked List: O(N)
+Insert at start -> Array: O(N), Linked List: O(1)
+Insert at end -> Array: O(1), Linked List: O(N)
+Extra space -> Array: 0, Linked List: O(N)
