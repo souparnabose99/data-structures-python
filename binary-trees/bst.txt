@@ -1,1 +1,1 @@
-
+Trees are hierarchical data structures consisting of root node, parent and child/leaf nodes.
