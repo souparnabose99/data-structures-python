@@ -1,8 +1,3 @@
 Trees are hierarchical data structures consisting of root node, parent and child/leaf nodes.
 
-Root :
-Parent :
-Children :
-Leaf :
-Depth :
-Height :
+Searching for an arbitrary item takes O(logN) for trees compared to O(N) in arrays and linked list
