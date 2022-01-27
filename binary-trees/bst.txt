@@ -1,3 +1,4 @@
-Trees are hierarchical data structures consisting of root node, parent and child/leaf nodes.
+Trees are hierarchical data structures consisting of root node, parent and child/leaf nodes. We have access to root node, all other nodes can be accessed via the root node.
+It is an undirected graph G(V,E) in which any 2 vertices are connected by exactly 1 path, equivalent to a connected undirected acyclic graph.
 
 Searching for an arbitrary item takes O(logN) for trees compared to O(N) in arrays and linked list
