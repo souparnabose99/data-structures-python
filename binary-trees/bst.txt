@@ -1,4 +1,13 @@
 Trees are hierarchical data structures consisting of root node, parent and child/leaf nodes. We have access to root node, all other nodes can be accessed via the root node.
 It is an undirected graph G(V,E) in which any 2 vertices are connected by exactly 1 path, equivalent to a connected undirected acyclic graph.
 
-Searching for an arbitrary item takes O(logN) for trees compared to O(N) in arrays and linked list
+Searching for an arbitrary item takes O(logN) for trees compared to O(N) in arrays and linked list.
+
+Height : No of edges on the longest downward path from the root node to the leaf nodes.
+If h=Log(N), then the tree is balanced and O(logN) is maintained
+
+Binary Search Trees (BST) :
+1. Every node in the tree can have atmost 2 children
+2. Left child is smaller than the parent node
+3. Right child is greater tahn the parent node
+4. We can access root node exclusively, all other nodes can be accessed exclusively via the root node
