@@ -4,7 +4,7 @@ It is an undirected graph G(V,E) in which any 2 vertices are connected by exactl
 Searching for an arbitrary item takes O(logN) for trees compared to O(N) in arrays and linked list.
 
 Height : No of edges on the longest downward path from the root node to the leaf nodes.
-If h=Log(N), then the tree is balanced and O(logN) is maintained
+If h=Log(N), then the tree is balanced and O(logN) is maintained.
 
 Binary Search Trees (BST) :
 1. Every node in the tree can have atmost 2 children
