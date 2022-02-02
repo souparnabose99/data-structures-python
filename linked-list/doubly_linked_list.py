@@ -60,4 +60,3 @@ class LinkedList:
             previous_node.next = actual_node.next
 
 
-
