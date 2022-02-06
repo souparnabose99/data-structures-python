@@ -79,4 +79,3 @@ print("---------")
 ll.traverse_ll()
 print("Size : ", ll.size_of_ll())
 
-
