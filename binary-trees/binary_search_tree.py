@@ -65,6 +65,79 @@ class BinarySearchTree:
 
         return node.data
 
+    def remove(self, data):
+        if self.root:
+            self.remove_node(data, self.root)
+
+    def remove_node(self, data, node):
+
+        if node is None:
+            return
+
+        if data < node.data:
+            self.remove_node(data, node.left_node)
+        elif data > node.data:
+            self.remove_node(data, node.right_node)
+        else:
+
+            if node.left_node is None and node.right_node is None:
+                print("Removing a leaf node...%d" % node.data)
+
+                parent = node.parent
+
+                if parent is not None and parent.left_node == node:
+                    parent.left_node = None
+                if parent is not None and parent.right_node == node:
+                    parent.right_node = None
+
+                if parent is None:
+                    self.root = None
+
+                del node
+
+            elif node.left_node is None and node.right_node is not None:  # node !!!
+                print("Removing a node with single right child...")
+
+                parent = node.parent
+
+                if parent is not None:
+                    if parent.left_node == node:
+                        parent.left_node = node.right_node
+                    if parent.rightChild == node:
+                        parent.right_node = node.right_node
+                else:
+                    self.root = node.right_node
+
+                node.right_node.parent = parent
+                del node
+
+            elif node.right_node is None and node.left_node is not None:
+                print("Removing a node with single left child...")
+
+                parent = node.parent
+
+                if parent is not None:
+                    if parent.left_node == node:
+                        parent.left_node = node.left_node
+                    if parent.right_node == node:
+                        parent.right_node = node.left_node
+                else:
+                    self.root = node.left_node
+
+                node.left_node.parent = parent
+                del node
+
+            else:
+                print('Removing node with two children....')
+
+                predecessor = self.get_predecessor(node.left_node)
+
+                temp = predecessor.data
+                predecessor.data = node.data
+                node.data = temp
+
+                self.remove_node(data, predecessor)
+
 
 bst = BinarySearchTree()
 bst.insert(10)
@@ -78,5 +151,3 @@ bst.insert(3)
 bst.traverse()
 print("Max : ", bst.get_max_value())
 print("Min : ", bst.get_min_value())
-
-
