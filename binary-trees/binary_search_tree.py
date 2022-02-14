@@ -152,4 +152,3 @@ bst.traverse()
 print("Max : ", bst.get_max_value())
 print("Min : ", bst.get_min_value())
 
-
