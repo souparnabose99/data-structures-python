@@ -1,3 +1,13 @@
+heaps are basically binary trees
+two main binary heap types: min heap and max heap
+
+Heap Properties:
+1.) COMPLETENESS: we construct the heap from left to right across 	each row – of course the last row may not be fully complete
+2.) HEAP PROPERTY: every node can have 2 children so heaps are almost-complete binary trees.
+-> min heap: the parent node is always smaller than
+			the child nodes (left and right nodes)
+-> max heap: the parent node is always greater than
+			the child nodes (left and right nodes)
 
 
  
