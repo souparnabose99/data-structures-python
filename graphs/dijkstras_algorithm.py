@@ -1,3 +1,5 @@
+import heapq
+
 
 class Edge:
 
@@ -23,3 +25,13 @@ class Vertex:
     # insert objects into heap and compare objects
     def __lt__(self, other_node):
         return self.min_distance < other_node.min_distance
+
+
+class DijkstrasAlgorithm:
+
+    def __init__(self):
+        self.heap = []
+
+    def calculate(self):
+        # initialize vertices
+        start_vertex.min_distance = 0
