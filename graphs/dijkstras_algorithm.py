@@ -30,8 +30,10 @@ class Vertex:
 class DijkstrasAlgorithm:
 
     def __init__(self):
+        # this is a heap representation using heapq (binary heap)
         self.heap = []
 
-    def calculate(self):
+    def calculate(self, start_vertex):
         # initialize vertices
         start_vertex.min_distance = 0
+        heapq.heappush(self.heap, start_vertex)
