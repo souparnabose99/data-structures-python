@@ -37,3 +37,5 @@ class DijkstrasAlgorithm:
         # initialize vertices
         start_vertex.min_distance = 0
         heapq.heappush(self.heap, start_vertex)
+
+        
