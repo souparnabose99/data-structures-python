@@ -39,3 +39,5 @@ class DijkstrasAlgorithm:
         heapq.heappush(self.heap, start_vertex)
 
         
+
+        
