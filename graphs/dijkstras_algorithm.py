@@ -38,6 +38,31 @@ class DijkstrasAlgorithm:
         start_vertex.min_distance = 0
         heapq.heappush(self.heap, start_vertex)
 
+        # iterate until heap is not empty
+        while self.heap:
+            # pop the vertex with lowest min distance parameter
+            actual_vertex = heapq.heappop(self.heap)
+
+            if actual_vertex.visited:
+                continue
+
+            # consider neighbours
+            for edge in actual_vertex.adjacency_list:
+                u = edge.start_vertex
+                v = edge.target_vertex
+                # compare min distance
+                new_distance = u.min_distance + edge.weight
+
+                # there is a shorter path to v
+                if new_distance < v.min_distance:
+                    v.predecessor = u
+                    v.min_distance = new_distance
+
+                    # Lazy implementation
+                    heapq.heappush(self.heap, v)
+
+            actual_vertex.visited = True
+
         
 
 
