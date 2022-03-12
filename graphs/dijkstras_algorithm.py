@@ -63,7 +63,11 @@ class DijkstrasAlgorithm:
 
             actual_vertex.visited = True
 
-        
+    @staticmethod
+    def get_shortest_path(vertex):
+        print("Shortest path to the vertex is : ", vertex.min_distance)
+        actual_vertex = vertex
 
-
-        
+        while actual_vertex.predecessor is not None:
+            print("Vertex Name: ", actual_vertex.name)
+            actual_vertex = actual_vertex.predecessor
