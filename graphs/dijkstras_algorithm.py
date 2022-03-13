@@ -124,3 +124,5 @@ if __name__ == "__main__":
     algorithm = DijkstrasAlgorithm()
     algorithm.calculate(node1)
     algorithm.get_shortest_path(node7)
+
+    
