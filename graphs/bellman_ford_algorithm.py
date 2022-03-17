@@ -44,9 +44,35 @@ class BellmanFordAlgorithm:
             if self.check_cycle(edge):
                 print("Negative cycle detected")
                 return
-    
-    def check_cycle(self):
-        
+
+    def check_cycle(self, edge):
+        # If min_distance of a vertex decreases after V-1 iterations, it means there is negative cycle
+        if edge.start_vertex.min_distance + edge.weight < edge.target_vertex.min_distance:
+            self.has_cycle = True
+            return True
+        else:
+            return False
+
+    def get_shortest_path(self, vertex):
+
+        if not self.has_cycle:
+            print("Shortest path exists with value : ", vertex.min_distance)
+            node = vertex
+
+            while node is not None:
+                print(node.name)
+                node = node.predecessor
+        else:
+            print("There is a negative cycle in G(V,E) graph")
 
 
+if __name__ == "__main__":
+    # Create the vertices
+    node1 = Node("A")
+    node2 = Node("B")
+    node3 = Node("C")
+    node4 = Node("D")
+    node5 = Node("E")
+    node6 = Node("F")
+    node7 = Node("G")
 
