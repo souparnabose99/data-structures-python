@@ -144,4 +144,3 @@ if __name__ == '__main__':
     algorithm = KruskalAlgorithm(vertices, edges)
     algorithm.find_mst()
 
-
