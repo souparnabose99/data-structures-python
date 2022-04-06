@@ -40,3 +40,4 @@ class WebCrawler:
 
     crawler = WebCrawler()
     crawler.crawl('https://www.bbc.com')
+    
