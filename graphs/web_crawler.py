@@ -34,3 +34,9 @@ class WebCrawler:
     except Exception as e:
       pass
     return raw_html
+
+  
+  if __name__ == '__main__':
+
+    crawler = WebCrawler()
+    crawler.crawl('https://www.bbc.com')
