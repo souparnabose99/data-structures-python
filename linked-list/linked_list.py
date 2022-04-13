@@ -64,7 +64,10 @@ class LinkedList:
             self.head = actual_node.next_node
         else:
             previous_node.next_node = actual_node.next_node
-
+    
+    def find_middle_node(self, data):
+        return data
+    
 
 ll = LinkedList()
 ll.insert_at_start(15)
