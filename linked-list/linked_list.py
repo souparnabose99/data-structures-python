@@ -74,6 +74,21 @@ class LinkedList:
             slow_pointer = slow_pointer.next_node
 
         return slow_pointer.data
+    
+    #O(N) runtime complexity
+    def reverse_ll_in_place(self):
+        previous_node = None
+        current_node = self.head
+        next_node = None
+
+        while current_node is not None:
+            next_node = current_node.next_node
+            current_node.next_node = previous_node
+            previous_node = current_node
+            current_node = next_node
+
+        self.head = previous_node
+        return
 
 
 ll = LinkedList()
@@ -91,5 +106,7 @@ print("---------")
 # ll.traverse_ll()
 print("Size : ", ll.size_of_ll())
 print(ll.find_middle_node())
+ll.reverse_ll_in_place()
+ll.traverse_ll()
 
 
