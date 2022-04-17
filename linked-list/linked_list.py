@@ -1,4 +1,3 @@
-
 class Node:
     def __init__(self, data):
         self.data = data
@@ -65,21 +64,32 @@ class LinkedList:
             self.head = actual_node.next_node
         else:
             previous_node.next_node = actual_node.next_node
-    
-    def find_middle_node(self, data):
-        return data
-    
+
+    # O(N) runtime complexity
+    def find_middle_node(self):
+        fast_pointer = self.head
+        slow_pointer = self.head
+        while fast_pointer.next_node and fast_pointer.next_node.next_node:
+            fast_pointer = fast_pointer.next_node.next_node
+            slow_pointer = slow_pointer.next_node
+
+        return slow_pointer.data
+
 
 ll = LinkedList()
 ll.insert_at_start(15)
 ll.insert_at_start(8)
 ll.insert_at_start(5)
 ll.insert_at_end(6)
+ll.insert_at_end(76)
+ll.insert_at_end(43)
 ll.insert_at_start("Yo")
 ll.traverse_ll()
 print("Size : ", ll.size_of_ll())
-ll.remove_from_ll(8)
+# ll.remove_from_ll(8)
 print("---------")
-ll.traverse_ll()
+# ll.traverse_ll()
 print("Size : ", ll.size_of_ll())
+print(ll.find_middle_node())
+
 
