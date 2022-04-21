@@ -69,6 +69,11 @@ class BinarySearchTree:
         if self.root:
             self.remove_node(data, self.root)
 
+    def get_predecessor(self, node):
+        if node.right_node:
+            return self.get_predecessor(node.right_node)
+        return node
+
     def remove_node(self, data, node):
 
         if node is None:
@@ -151,4 +156,3 @@ bst.insert(3)
 bst.traverse()
 print("Max : ", bst.get_max_value())
 print("Min : ", bst.get_min_value())
-
