@@ -21,7 +21,7 @@ class Heap:
 
     # starting with actual node inserted to root node, compare values for swap operations-> log(N) operations, O(log(N))
     def fix_heap(self, index):
-        # for node with index i, left child has index = 2i+1, right child has index 2i+1
+        # for node with index i, left child has index = 2i+1, right child has index 2i+2
         # hence, reverse the eqn-> l = 2i+1, r = 2i+2-> i=l-1/2
         parent_index = (index - 1)//2
         # now consider all items above til root node, if heap prop is violated then swap parent with child
